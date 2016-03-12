@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html ng-app="loc8r">
+
+<head lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Loc8r</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="asset/css/amelia.min.css" />
+    <link rel="stylesheet" href="asset/css/style.css" />
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="bower_components/animate.css/animate.css" />
+</head>
+
+<body>
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="/" class="navbar-brand">Loc8r</a>
+                <button class="navbar-toggle" type="button" data-toogle="collapse" data-target="#navbar-main">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div id="navbar-main" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="/about/">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <!-- views -->
+        <div ng-view></div>
+        <footer>
+            <div class="row">
+                <div class="col-xs-12">
+                    <small>&copy; Linh Truong - Jeremy</small>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- scripts -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+
+    <script src="app/app.module.js"></script>
+    
+    <script src="app/locationList/locationListCtrl.js"></script>
+    <script src="app/locationDetail/locationDetailCtrl.js"></script>
+</body>
+
+</html>
